@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer type="module"></script>
+</head>
+<body>
+    <div class="loading">
+        Carregando...
+        <div class="spinner"></div>
+    </div>
+
+    <div class="game-board">
+      <div class="player-name">
+        <label for="player-name">Por favor digite seu nome</label>
+        <input type="text" id="player-name" maxlength="3">
+      </div>
+      <div class="commands">
+        <button type="button" class="button-yellow" id="next-btn">Avancar</button>
+      </div>  
+    </div>
+
+    <audio id="background-audio" src="/Sounds/music.mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="click-audio" src="/Sounds/button.wav">
+      Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>

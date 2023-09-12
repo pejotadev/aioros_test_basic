@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/Images/PNL_BarraSuperior.png'), url('/Images/PNL_BACKGROUND.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% 100%;
+  background-position: top, top;
+  font-family: Arial, sans-serif;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+  /* Espaço entre a bolinha e outros elementos */
+}
+
+.spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #333;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.game-board {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commands {
+  display: contents;
+}
+
+.commands>div {
+  margin: -1em;
+}
+
+.commands>div>img {
+  width: 8em;
+  height: 8em;
+}
+
+.game-descend>img {
+  width: 16em;
+}
+
+.game-descend {
+  margin-bottom: 20px;
+}
+
+.commands {
+  text-align: center;
+}
+
+/* Estilo do botão */
+.button-yellow {
+  background-color: d6ba34;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo do botão quando o mouse está sobre ele (hover) */
+.button-yellow:hover {
+  background-color: #ffcc00;
+  /* Altera a cor de fundo para um amarelo mais claro ao passar o mouse */
+}
+
+
+.player-name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+  /* Espaço entre a bolinha e outros elementos */
+}
+
+#player-name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+  /* Espaço entre a bolinha e outros elementos */
+}
